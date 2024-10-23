@@ -1,13 +1,13 @@
 {% set name = "djangorestframework-guardian2" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/djangorestframework-guardian2-{{ version }}.tar.gz
-  sha256: 208cea6c8060246445a52244343ea0d730ba2a3d3414c81f032668e63e706069
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9cb8c9cc8bd51ed2429282a21517cafbb8b815be0d0b62a163530fd113534a52
 
 build:
   noarch: python
